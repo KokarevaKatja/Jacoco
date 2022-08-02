@@ -18,12 +18,12 @@ public class StatisticsServiceTest {
     }
 
     @Test
-    void findMaxIf() {
+    void findMaxIfIncomeInThousands() {
         StatisticsService service = new StatisticsService();
-        long[] incomesInBillions = {12, 5, 8, 4, 5, 3, 8, 6, 11, 11, 150};
+        long[] incomesInThousands = {100, 90, 84, 66, 17, 99, 149, 85, 64, 10, 150};
 
         long expected = 150;
-        long actual = service.findMax(incomesInBillions);
+        long actual = service.findMax(incomesInThousands);
 
         Assertions.assertEquals(expected, actual);
     }
